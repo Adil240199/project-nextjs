@@ -1,0 +1,50 @@
+.form {
+  margin: 0 auto;
+}
+
+.form > * + * {
+  margin-top: 1.5rem;
+}
+
+.blockInput > * + * {
+  margin-top: 1rem;
+}
+
+.button {
+  width: 100%;
+  border-radius: 12px;
+  padding: 12px;
+  transition: background-color 0.2s;
+}
+
+.enabled {
+  background-color: #ecb159;
+}
+
+.enabled:hover {
+  background-color: #e8a849;
+}
+
+.disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.message {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.message.error {
+  color: #ef4444;
+}
+
+.message.success {
+  color: #22c55e;
+}
+
+@media (min-width: 1024px) {
+  .form {
+    width: 50%;
+  }
+}

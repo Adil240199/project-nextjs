@@ -1,0 +1,50 @@
+.flexBlock {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background-color: #f9fafb;
+}
+
+.wrapImg {
+  flex-shrink: 0;
+}
+
+.icon {
+  border-radius: 0.375rem;
+}
+
+.textBlock > * + * {
+  margin-top: 0.25rem;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #25371f;
+}
+
+.text {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.gridBlock {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .gridBlock {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridBlock {
+    grid-template-columns: 1fr;
+  }
+}

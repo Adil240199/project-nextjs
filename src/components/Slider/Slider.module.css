@@ -1,0 +1,41 @@
+.wrapSlider {
+  margin: 24px 0;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 200px;
+  padding: 20px 150px 20px 150px;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+.wrapSlider > * {
+  scroll-snap-align: center;
+}
+
+.wrapSlider::-webkit-scrollbar {
+  display: none;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #c3c0c0eb;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.dot.active {
+  background-color:#e6b366;
+  transform: scale(1);
+  width: 30px;
+  border-radius: 1rem;
+}

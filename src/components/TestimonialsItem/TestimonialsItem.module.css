@@ -1,0 +1,123 @@
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  max-width: 400px;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 0.5rem 0 0.5rem 0;
+  padding: 20px;
+  z-index: 11;
+}
+
+.container:before,
+.container:after,
+.container > :first-child:before,
+.container > :first-child:after {
+  position: absolute;
+  content: " ";
+  width: 160px;
+  height: 160px;
+  border-color: #e6b366;
+  border-style: solid;
+  pointer-events: none;
+}
+
+.container:after {
+  top: -15px;
+  right: -15px;
+  border-width: 15px 15px 0 0;
+  border-radius: 7px;
+}
+
+.container:before {
+  bottom: -15px;
+  left: -15px;
+  border-width: 0 0 15px 15px;
+  border-radius: 7px;
+}
+
+.contentText {
+  padding-top: 30px;
+}
+
+.contentImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.contentImage img {
+  width: 25px;
+  height: 35px;
+  object-fit: cover;
+}
+
+.iconItem {
+  position: absolute;
+  top: 12px;
+  left: 40px;
+}
+
+.underText {
+  margin: 12px 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.blockItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.textAuthor {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.textPosition {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .mainText {
+    font-size: 20px;
+  }
+  .underText {
+    margin: 20px 0;
+    font-size: 16px;
+  }
+  .blockItem {
+    align-items: flex-end;
+    gap: 16px;
+  }
+  .textAuthor {
+    font-size: 18px;
+  }
+  .textPosition {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 700px;
+  }
+  .itemIcon {
+    display: block;
+  }
+  .mainText {
+    font-size: 24px;
+  }
+  .underText {
+    font-size: 18px;
+  }
+}

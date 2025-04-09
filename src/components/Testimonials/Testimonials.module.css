@@ -1,0 +1,8 @@
+.testimonials {
+  margin: -100px auto 0;
+  width: 100%;
+  padding: 120px 0 30px;
+  background-color: #36454f;
+  position: relative;
+  z-index: 10;
+}

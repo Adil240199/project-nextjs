@@ -1,0 +1,142 @@
+.linkKontakt {
+  background-color: #fafafa;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.linkKontakt:hover {
+  background-color: #d1d5db;
+}
+
+.text {
+  color: #313131d9;
+  font-size: 0.875rem;
+}
+
+.mainText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.blockTitle {
+  width: 100%;
+  max-width: 48rem;
+  text-align: center;
+}
+
+.span,
+.wrapSpan,
+.wrapSpanTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: solid white;
+}
+
+.span {
+  width: 3rem;
+  height: 3rem;
+  border-width: 10px;
+}
+
+.wrapSpan,
+.wrapSpanTop {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  border-width: 20px;
+}
+
+.wrapSpan {
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+}
+
+.wrapSpanTop {
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.wrapCta {
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.CTA {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  background-color: #e6b366;
+  padding: 64px 80px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .linkKontakt {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .mainText {
+    font-size: 1.875rem;
+  }
+
+  .CTA {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .linkKontakt {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.125rem;
+  }
+
+  .text {
+    font-size: 1.125rem;
+  }
+
+  .mainText {
+    font-size: 2.2rem;
+  }
+
+  .blockTitle {
+    text-align: left;
+  }
+
+  .span {
+    width: 5rem;
+    height: 5rem;
+    border-width: 15px;
+  }
+
+  .wrapSpan,
+  .wrapSpanTop {
+    width: 12rem;
+    height: 12rem;
+    border-width: 35px;
+  }
+
+  .CTA {
+    flex-direction: row;
+    gap: 2.5rem;
+    padding: 4rem 5rem;
+  }
+}

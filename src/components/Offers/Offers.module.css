@@ -1,0 +1,26 @@
+.section {
+  padding: 5rem 0;
+}
+
+.textUslugi {
+  color: #e6b366;
+  text-align: center;
+}
+
+.blockTitle {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bgWrap {
+  background-color: #36454f;
+  width: 100%;
+  padding: 2rem 0.5rem;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .blockTitle {
+    width: 60%;
+  }
+}

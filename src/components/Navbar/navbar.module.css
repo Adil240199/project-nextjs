@@ -1,0 +1,175 @@
+.navbar {
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.navWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 64px;
+}
+
+.imgWrapper {
+    flex-shrink: 0;
+    width: 180px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ulDesktop {
+    display: none;
+    margin: 0 auto;
+  }
+  
+
+
+.wrapperContact {
+    display: none;
+}
+
+.buttonContact {
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    text-align: center;
+    background-color: #E6B468;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s ease-in-out;
+}
+  
+  .buttonContact:hover {
+    border-color: #e6b366;
+}
+
+.wrapIconMobile {
+    display: flex;
+    align-items: center;
+    z-index: 50;
+}
+
+.buttonMobile {
+    background: #fff;
+    color: black;
+    font-size: 2rem;
+    transition: transform 0.3s;
+    right: 1.25rem;
+  }
+  
+.buttonMobile.rotate {
+    transform: rotate(90deg);
+}
+
+.mobileMenu {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 40;
+    overflow-y: auto;
+    transition: transform 0.5s ease;
+}
+
+.mobileMenu.open {
+    transform: translateX(0);
+}
+
+.mobileMenu.closed {
+    transform: translateX(100%);
+}
+
+.ulMobileWrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.ulMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 5rem;
+    gap: 2rem;
+}
+
+.linkMobile {
+    display: block;
+    color: #2d3748;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease;
+}
+.linkMobile:hover {
+    color: #3182ce;
+}
+
+.wrapSocial {
+    margin-top: auto;
+    margin-bottom: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media (min-width: 640px) {
+    .buttonContact {
+      font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .buttonContact {
+      padding: 0.25rem 2rem;
+      font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .ulDesktop {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .ulDesktop > * + * {
+      margin-left: 0.5rem;
+    }
+
+    .wrapperContact {
+        display: block;
+      }
+    
+    .buttonContact {
+        padding: 0.425rem 2.5rem;
+        font-size: 1.25rem;
+    }
+
+    .wrapIconMobile, .mobileMenu {
+        display: none;
+    }
+}
+
+
+
+
+
+  
+
+  
+

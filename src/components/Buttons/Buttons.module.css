@@ -1,0 +1,82 @@
+.OutlinedButton {
+  width: 150px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  border: 1px solid #3d3d3d;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease-in-out;
+  color: #171717;
+}
+
+.OutlinedButton:hover {
+  border-color: #e6b366;
+}
+
+.SocialButton {
+  width: 33px;
+  height: 33px;
+  background-color: #e6b366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  transition: all 0.3s ease;
+}
+
+.SocialButton:hover {
+  background-color: #d49542;
+  transform: scale(1.05);
+}
+
+.linkBlock {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #e6b366;
+  color: black;
+  font-size: 0.875rem;
+  border-radius: 99px;
+  transition: 0.2s;
+  outline: none;
+}
+
+.linkBlock:hover {
+  background: #d5a55b;
+}
+
+.roundedImage {
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+@media (min-width: 640px) {
+  .OutlinedButton {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .OutlinedButton {
+    padding: 0.75rem 2rem;
+  }
+  .linkBlock {
+    padding: 0.75rem 2.75rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .OutlinedButton {
+    width: auto;
+    padding: 0.45rem 1.5rem;
+    font-size: 1.125rem;
+  }
+}

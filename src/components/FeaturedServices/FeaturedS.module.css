@@ -1,0 +1,30 @@
+.FeaturedSBlock {
+    margin: 50px auto 30px;
+    width: 100%;
+    padding: 60px 0.5rem 30px;
+    background-color: #36454F;
+    position: relative;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2.5rem auto 0;
+    padding: 0.75rem 1.25rem;
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+    background: transparent;
+    border: 1px solid #E6B366;
+    color: #E6B366;
+    font-size: 1.125rem;
+    border-radius: 0.75rem;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #2e3b43;
+}
+

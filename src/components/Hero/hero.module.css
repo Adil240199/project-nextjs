@@ -1,0 +1,71 @@
+.hero {
+  margin: 0 auto;
+  padding: 1.5rem 1rem 0;
+}
+
+.main {
+  margin: auto;
+  padding-top: 60px;
+  width: 100%;
+  max-width: 42rem;
+  text-align: center;
+}
+
+.mainText {
+  margin:0 auto 0.7rem;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  border-radius: 20px;
+  border: 1px solid #e6b366;
+  padding: 0.25rem;
+}
+
+.icon {
+  background-color: #d59e4a;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.text {
+  font-size: 0.875rem;
+}
+
+.gridBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  align-items: end;
+}
+
+.blockImage {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.Image {
+  object-fit: cover;
+}
+
+.height-0 {
+  height: 300px;
+}
+.height-1 {
+  height: 270px;
+}
+.height-2 {
+  height: 240px;
+}
+.height-3 {
+  height: 290px;
+}
+
+@media (min-width: 1280px) {
+  .text {
+    font-size: 1rem;
+  }
+}

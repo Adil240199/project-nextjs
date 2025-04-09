@@ -1,0 +1,63 @@
+.Timeline{
+    margin: 2.5rem auto 0;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 2.5rem;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.block {
+    transition: opacity 0.5s;
+  }
+  
+.opacity0 {
+    opacity: 0;
+}
+  
+.opacity100 {
+    opacity: 1;
+}
+  
+.text {
+    font-size: 1.125rem;
+    text-align: left;
+}
+
+.blockButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.5rem;
+    gap: 2rem;
+}
+
+.blockButton > p {
+    font-size: 2rem;
+}
+
+.button {
+    width: 33px;
+    height: 33px;
+    background-color: #E6B366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+    transition: all 0.3s;
+}
+.button:hover {
+    background-color: #D49542;
+}
+
+.arrow {
+    color: #fff;
+    font-size: 20px;
+}
+  
+@media (min-width: 1024px) {
+    .Timeline {
+        padding: 3rem;
+    }
+}

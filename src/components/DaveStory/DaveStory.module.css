@@ -1,0 +1,62 @@
+.section {
+  padding: 2.5rem 1.5rem;
+  color: #1f2937;
+  line-height: 1.625;
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 2.25rem;
+  font-family: "Playfair", serif;
+  font-weight: 700;
+  color: #111827;
+}
+
+@media (min-width: 1280px) {
+  .mainTitle {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+
+.list {
+  margin: 0 auto;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  color: #4b5563;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 1.25rem 0;
+}
+
+.imgHistory {
+  border-radius: 0.75rem;
+  margin: 2rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blockArticles {
+  gap: 2.5rem;
+}
+
+.titleArticle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  color: #111827;
+}
+
+.textContent {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.75rem;
+}
