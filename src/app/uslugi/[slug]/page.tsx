@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
 import styles from "./Slug.module.css"
+import Link from "next/link";
 
 interface Params {
   slug: ServicesSlug;
@@ -57,9 +58,9 @@ const ServicePage: React.FC<Props> = async ({ params }) => {
           <p className={styles.nfSubtitle}>
             Извините, но мы не смогли найти запрашиваемую вами страницу.
           </p>
-          <a href="/" className={styles.linkToHome}>
+          <Link href="/" className={styles.linkToHome}>
             Вернуться на главную
-          </a>
+          </Link>
         </div>
       </div>
     );

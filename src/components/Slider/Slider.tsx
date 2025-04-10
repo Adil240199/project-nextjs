@@ -13,7 +13,6 @@ const Slider: React.FC<TestimonialsSliderProps> = ({ items }) => {
   const {
     sliderRef,
     currentIndex,
-    isDragging,
     handleMouseDown,
     handleMouseMove,
     handleMouseUpOrLeave,

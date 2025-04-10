@@ -4,7 +4,6 @@ import { TestimonialsProps } from "@/content/testimonials";
 import styles from "./TestimonialsItem.module.css"
 
 export const TestimonialItem: React.FC<TestimonialsProps> = ({
-    title,
     description,
     author,
     position,

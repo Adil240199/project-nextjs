@@ -16,7 +16,7 @@ export default function AboutUs({ title, subtitle, description, imageSrc }: Abou
         <span className={styles.circle}/>
         <span className={styles.circle}/>
           <Image
-            src={`/icons/${imageSrc}.webp`}
+            src={`/icons/${imageSrc}.jpg`}
             alt="imageAbout"
             width={485}
             height={490}

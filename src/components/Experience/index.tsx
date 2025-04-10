@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Title from "@/components/Title/Title";
 import CTA from '@/components/CTA';
 import { ExperienceProps } from '@/content/aboutUs';
-// import Counter from '../Counter';
+import Counter from '../Counter';
 import { counterData } from '@/content/counter';
 import styles from "./Experience.module.css"
 export default function Experience({
@@ -52,7 +52,7 @@ export default function Experience({
         </div>
       </div>
 
-      {/* <Counter data={counterData} /> */}
+      <Counter data={counterData} />
       <CTA />
     </section>
   )
