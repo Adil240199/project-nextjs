@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const ServicePage: React.FC<Props> = async ({ params }) => {
+const ServicePage = async ({ params }: Props) => {
   const data = servicesMap.get(params.slug)
 
   if (!data) {
